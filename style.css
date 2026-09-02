@@ -2,3 +2,28 @@
     margin: 0;
     padding: 0;
 }
+
+header {
+    background-color: #222F24;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+}
+
+.name-logo {
+    display: flex; 
+    justify-content: start;
+    flex-grow: 0;   
+}
+
+.name-logo a {
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    flex-grow: 1;
+    background-color: rgb(139, 42, 42);
+    display: flex;
+    justify-content: end;
+}
