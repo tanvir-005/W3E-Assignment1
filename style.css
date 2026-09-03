@@ -1,6 +1,12 @@
 :root {
-    --dark: #222f24;
-    --light: #93D99A;
+    --primary-dark: #222f24;
+    --primary-light: #93D99A;
+    --medium: #4A9852;
+    --very-light: #F4FCF6;
+    --gradient-dark: #3D6170;
+    --gradient-light: #388E82;
+    --secondary-light: #B4C285;
+    --second-accent: #71D0E6;
 }
 
 * {
@@ -10,11 +16,10 @@
 }
 
 header {
-    background-color: var(--dark);
-    height: 5vh;
+    background-color: var(--primary-dark);
     display: flex;
     align-items: center;
-    height: 8vh;
+    height: 10vh;
 }
 
 .name-logo {
@@ -31,7 +36,8 @@ header {
 .name {
     color: white;
     text-decoration: none;
-    font-size: 3em;
+    font-size: 2.5em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 nav {
@@ -46,29 +52,29 @@ nav {
 .nav-link {
     color: white;
     text-decoration: none;
-    margin-right: 24px;
+    margin-right: 30px;
 }
 
 .nav-button {
     text-decoration: none;
-    background-color: var(--light);
-    margin-right: 24px;
+    background-color: var(--primary-light);
+    margin-right: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50%;
+    height: 60%;
     padding: 0 24px;
-    border-radius: 2.5vh;
-    color: var(--dark);
+    border-radius: 40px;
+    color: var(--primary-dark);
 }
 
 .search {
     /* background-color: red; */
-    border: 2px solid var(--light);
+    border: 2px solid var(--primary-light);
     margin-right: 24px;
     display: flex;
-    height: 50%;
-    border-radius: 2.5vh;
+    height: 60%;
+    border-radius: 40px;
     overflow: hidden;
 }
 
@@ -81,21 +87,27 @@ nav {
 
 .search-box {
     flex: 1;
-    padding-left: 10px;
+    padding-left: 18px;
 }
 
 .search-box::placeholder {
-    color: var(--light);
+    color: var(--primary-light);
 }
 
 .search-button {
     /* background-color: yellow; */
-    padding: 0 12px 0 8px;
+    padding: 0 18px 0 8px;
 }
 
 .search-button svg {
     height: 18px;
     width: 18px;
     /* background-color: red; */
-    fill: var(--light);
+    fill: var(--primary-light);
+}
+
+.nav-link, .nav-button, .search-box::placeholder {
+    font-size: 0.9em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bold;
 }
