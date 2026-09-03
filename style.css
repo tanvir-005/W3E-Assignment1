@@ -1,24 +1,36 @@
 :root {
+    /* the colors in the header */
     --primary-dark: #222f24;
     --primary-light: #93D99A;
+
+    /* used in white bg */
     --medium: #4A9852;
+
+    /* almost white (for subtle highlight) */
     --very-light: #F4FCF6;
+
+    /* gradient colors */
     --gradient-dark: #3D6170;
     --gradient-light: #388E82;
+
+    /* used in footer mainly */
     --secondary-light: #B4C285;
+
+    /* used in stay selection */
     --second-accent: #71D0E6;
 }
 
-* {
+*, *:hover {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* don't let border ruin the sizes */
 }
 
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; /* footer should be at the bottom even if the page were small */
 }
 
 header {
@@ -26,11 +38,14 @@ header {
     display: flex;
     align-items: center;
     height: 10vh;
+
+    /* keep header even if scrolled */
     position: sticky;
     top: 0;
     z-index: 1;
 }
 
+/* the section that contains the logo and name of the website */
 .name-logo {
     display: flex; 
     justify-content: start;
@@ -49,6 +64,7 @@ header {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* rest of the part than logo and website name */
 nav {
     flex-grow: 1;
     /* background-color: rgb(139, 42, 42); */
@@ -64,6 +80,7 @@ nav {
     margin-right: 30px;
 }
 
+/* BOOK A TEE TIME */
 .nav-button {
     text-decoration: none;
     background-color: var(--primary-light);
@@ -77,6 +94,7 @@ nav {
     color: var(--primary-dark);
 }
 
+/* style the search form */
 .search {
     /* background-color: red; */
     border: 2px solid var(--primary-light);
@@ -121,14 +139,170 @@ nav {
     font-weight:bold;
 }
 
+/* everything except header and footer will be under main */
 main {
     flex-grow: 1;
 }
 
 footer {
-    min-height: 80vh;
-    background: url(assets/valley.jpg);
+    height: 80vh;
+    background: url(assets/valley.jpg); /* added an image */
     background-size: cover;
     background-position: center top; 
+    display: block;
 }
 
+.footer-area {
+    background-color: var(--primary-dark); /* an overlay color */
+    opacity: 0.95;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* we have divided the footer area in left and right */
+.left {
+    /* background-color: yellow; */
+    max-width: 70%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-auto-flow: column;
+    grid-template-rows: repeat(8, auto);
+    gap: 16px 70px;
+
+    
+    a {
+        color: var(--secondary-light);
+        text-decoration: none;
+
+        font-size: 0.9em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight:bold;
+    }
+
+}
+
+.right {
+    /* background-color: teal; */
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: start;
+    /* background-color: red; */
+    width: 100%;
+}
+
+.icons a {
+    text-decoration: none;
+    margin: 0 40px 0 0;
+}
+
+.icons a svg {
+    height: 32px;
+    width: 32px;
+    filL: var(--secondary-light)
+}
+
+.conversions {
+    width: 100%;
+    height: 40px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: start;
+}
+
+.currency, .country{
+    /* background-color: yellow; */
+    border: 2px solid var(--secondary-light);
+    border-radius: 5px;
+}
+
+.currency {
+    width: 30%;
+    margin-right: 20px;
+}
+
+.country {
+    width: 50%;
+}
+
+.first {
+    background-color: transparent;
+    color: var(--secondary-light);
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+}
+
+.first svg {
+    height: 30px;
+    width: 20px;
+    /* fill: white; */
+}
+
+.footer-conversion-menu {
+    display: none;
+}
+
+.country:hover, .currency:hover {
+    border: none;
+
+    .footer-conversion-menu {
+        display: block;
+        width: 100%;
+        /* background-color: yellow; */
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 0;
+        left: 0;
+
+        button {
+            background-color: transparent;
+            color: var(--secondary-light);
+            width: 100%;
+            height: 40px;
+            padding: 0 20px;
+            display: flex; 
+            justify-content: space-between;
+            align-items: center;
+            border: none;
+        }
+
+        button:hover {
+            background-color: var(--secondary-light);
+            /* background-color: cyan; */
+            color: var(--primary-dark);
+        }
+    }
+
+    .first {
+        display: none;
+    }
+}
+
+.company-logo {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+}
+
+.copyright {
+    width: 100%;
+    p {
+        font-weight: bold;
+        color: var(--secondary-light);
+    }
+}
