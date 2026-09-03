@@ -15,11 +15,20 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 header {
     background-color: var(--primary-dark);
     display: flex;
     align-items: center;
     height: 10vh;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .name-logo {
@@ -111,3 +120,15 @@ nav {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight:bold;
 }
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    min-height: 80vh;
+    background: url(assets/valley.jpg);
+    background-size: cover;
+    background-position: center top; 
+}
+
