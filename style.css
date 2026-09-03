@@ -8,22 +8,35 @@ header {
     height: 5vh;
     display: flex;
     align-items: center;
+    height: 8vh;
 }
 
 .name-logo {
     display: flex; 
     justify-content: start;
     flex-grow: 0;   
+    align-items: center;
 }
 
-.name-logo a {
+.logo {
+    margin-left: 24px;
+}
+
+.name {
     color: white;
     text-decoration: none;
+    font-size: 3em;
 }
 
 nav {
     flex-grow: 1;
-    background-color: rgb(139, 42, 42);
+    /* background-color: rgb(139, 42, 42); */
     display: flex;
     justify-content: end;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin-right: 24px;
 }
