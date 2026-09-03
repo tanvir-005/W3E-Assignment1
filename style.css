@@ -299,6 +299,19 @@ footer {
     width: 100%;
 }
 
+.company-logo svg {
+    color: var(--secondary-light);
+    width: 200px;
+    height: 80px;
+}
+
+.vertical-bar {
+    /* height: 80px; */
+    width: 5px;
+    margin: 0;
+    padding: 0;
+}
+
 .copyright {
     width: 100%;
     p {
