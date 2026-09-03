@@ -1,10 +1,16 @@
+:root {
+    --dark: #222f24;
+    --light: #93D99A;
+}
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 header {
-    background-color: #222F24;
+    background-color: var(--dark);
     height: 5vh;
     display: flex;
     align-items: center;
@@ -31,12 +37,65 @@ header {
 nav {
     flex-grow: 1;
     /* background-color: rgb(139, 42, 42); */
+    height: 100%;
     display: flex;
     justify-content: end;
+    align-items: center;
 }
 
 .nav-link {
     color: white;
     text-decoration: none;
     margin-right: 24px;
+}
+
+.nav-button {
+    text-decoration: none;
+    background-color: var(--light);
+    margin-right: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    padding: 0 24px;
+    border-radius: 2.5vh;
+    color: var(--dark);
+}
+
+.search {
+    /* background-color: red; */
+    border: 2px solid var(--light);
+    margin-right: 24px;
+    display: flex;
+    height: 50%;
+    border-radius: 2.5vh;
+    overflow: hidden;
+}
+
+.search-box, .search-button {
+    margin: 0;
+    background: none;
+    border: none;
+    width: auto;
+}
+
+.search-box {
+    flex: 1;
+    padding-left: 10px;
+}
+
+.search-box::placeholder {
+    color: var(--light);
+}
+
+.search-button {
+    /* background-color: yellow; */
+    padding: 0 12px 0 8px;
+}
+
+.search-button svg {
+    height: 18px;
+    width: 18px;
+    /* background-color: red; */
+    fill: var(--light);
 }
