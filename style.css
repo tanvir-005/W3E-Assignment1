@@ -296,20 +296,22 @@ footer {
 .company-logo {
     display: flex;
     justify-content: start;
+    align-items: center;
     width: 100%;
+
 }
 
-.company-logo svg {
+.travel-ai-logo {
     color: var(--secondary-light);
     width: 200px;
     height: 80px;
 }
 
 .vertical-bar {
-    /* height: 80px; */
-    width: 5px;
-    margin: 0;
-    padding: 0;
+    color: var(--secondary-light);
+    margin-left: 20px;
+    height: 45px;
+    width: 3px;
 }
 
 .copyright {
