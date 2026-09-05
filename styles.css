@@ -26,6 +26,7 @@
 
 *, *:hover {
     font-family: 'Lato', sans-serif;
+    /* color: red; */
 }
 
 * {
@@ -445,6 +446,7 @@ article {
                 font-size: 0.7em;
                 height: 24px;
                 border-radius: 50rem;
+                background-color: transparent;
             }
 
             .learn-more {
@@ -464,6 +466,44 @@ article {
         height: 100%;
     }
 }
+
+.pages {
+    margin-top: 12px;
+    width: 65%;
+    /* background-color: lightcyan; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .page {
+        a {
+            text-decoration: none;
+            font-size: 0.8em;
+            margin-right: 8px;
+            color: black;
+        }
+
+        .inactive {
+            color: var(--lightgrey);
+        }
+
+        .active {
+            color: var(--medium);
+        }
+    }
+
+    .all-places {
+        padding: 8px 12px;
+        border: 1px solid var(--lightgrey);
+        color: var(--lightgrey);
+        border-radius: 50rem;
+        font-size: 0.7em;
+        background-color: transparent;
+    }
+
+    margin-bottom: 24px;
+}
+
 
 
 
