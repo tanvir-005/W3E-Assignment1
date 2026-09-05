@@ -375,6 +375,11 @@ article {
         background-size:cover;
         background-position: center;
         background-repeat: no-repeat;
+
+        img {
+            height: 30px;
+            width: 30px;
+        }
     }
 
     iframe {
