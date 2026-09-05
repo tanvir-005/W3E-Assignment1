@@ -202,13 +202,14 @@ article {
     grid-template-columns: 5fr 2fr;
     grid-template-rows: repeat(2, 1fr);
     border-radius: 20px;
-    background-color: red;
+    /* background-color: red; */
+    overflow: hidden;
 }
 
 .left-img {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 
 .right-top-img {
@@ -227,6 +228,7 @@ article {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border: 1px solid white;
 }
 
 
