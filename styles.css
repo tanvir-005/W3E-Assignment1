@@ -323,7 +323,7 @@ article {
 .resorts {
     /* background-color: bisque; */
     display: grid;
-    grid-template-rows: repeat(2, 45vh);
+    grid-template-rows: repeat(2, 50vh);
     grid-template-columns: 2fr 2fr 2fr 3fr;
     grid-gap: 8px;
 }
@@ -364,9 +364,11 @@ article {
 }
 
 .r11, .r12, .r13, .r21, .r22, .r23, .map {
-    background-color: maroon;
+    /* background-color: lightcyan; */
     border-radius: 8px;
     overflow: hidden;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 
     .img-area {
         height: 40%;
@@ -375,10 +377,86 @@ article {
         background-size:cover;
         background-position: center;
         background-repeat: no-repeat;
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
 
+        button {
+            font-size: 0.5em;
+            margin-left: 8px;
+            margin-top: 8px;
+            text-align: left;
+            padding: 8px 12px;
+            background-color: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            color: white;
+            border-radius: 50rem;
+        }
+        
         img {
-            height: 30px;
-            width: 30px;
+            margin-top: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            height: 24px;
+            width: 24px;
+            padding: 6px;
+            border-radius: 50rem;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    .desc-area {
+        display: flex;
+        flex-direction: column;
+        padding: 12px;
+
+        h3 {
+            font-size: 1em;
+            margin-bottom: 8px;
+        }
+        .site {
+            font-size: 0.7em;
+            color: var(--lightgrey);
+        }
+        
+        .price {
+            font-size: 0.9em;
+            font-weight: bold;
+            color: var(--medium);
+            margin-bottom: 8px;
+        }
+
+        p {
+            font-size: 0.7em;
+            color: var(--lightgrey);
+            margin-bottom: 8px;
+        }
+
+        .location {
+            font-size: 0.7em;
+            margin-bottom: 12px;
+        }
+
+        .button-area {
+            display: flex;
+            justify-content: space-between;
+
+            button {
+                flex: 1;
+                font-size: 0.7em;
+                height: 24px;
+                border-radius: 50rem;
+            }
+
+            .learn-more {
+                color: var(--lightgrey);
+                border: 1px solid var(--lightgrey);
+            }
+
+            .see-dates {
+                margin-left: 8px;
+                border: none;
+                background-color: var(--primary-light);
+            }
         }
     }
 
