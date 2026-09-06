@@ -642,7 +642,7 @@ article {
 
 .h2 {
     font-size: 0.8 em;
-    margin: 12px 0;
+    margin: 24px 0 12px 0;
 }
 
 .reviews {
@@ -707,7 +707,56 @@ article {
     }
 }
 
+.features {
+    display: flex;
+    /* background-color: red; */
+    /* height: 45vh; */
+    gap: 12px;
 
+    .feature1 {
+        flex: 3;
+        /* background-color: skyblue; */
+    }
+    
+    .feature2 {
+        /* background-color: green; */
+        flex: 5;
+    }
+
+    .feature1, .feature2 {
+        background-color: var(--very-light);
+        border: 2px solid var(--very-light2);
+        border-radius: 4px;
+        padding: 32px;
+
+        ul {
+            list-style-position: outside;
+            margin-left: 18px;
+        }
+
+        li {
+            margin-top: 8px;
+            font-size: 0.8em;
+            color: var(--lightgrey);
+        }
+
+        h5 {
+            margin: 18px 0;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background-color: rgba(0, 0, 0, 0.1);
+            margin-top: 18px;
+        }
+    }
+}
+
+.best-time {
+    font-size: 0.9em;
+    color: var(--lightgrey);
+}
 
 
 
