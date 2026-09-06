@@ -518,7 +518,7 @@ article {
     .cards {
         display: flex;
         justify-content: space-between;
-        gap: 8px;
+        gap: 18px;
         margin: 8px 0;
 
         .card {
@@ -536,8 +536,17 @@ article {
                 width: 24px;
             }
 
+            .img-gap {
+                margin-top: 24px;
+            }
+
             h4 {
                 font-size: 1em;
+                margin: 18px 0 8px 0;
+            }
+
+            h5 {
+                font-size: 0.9em;
                 margin: 18px 0 8px 0;
             }
 
@@ -551,6 +560,63 @@ article {
                 color: var(--lightgrey)
             }
 
+            hr {
+                margin: 12px 0 0 0;
+                background-color: rgba(0, 0, 0, 0.1);
+                height: 1px;
+                border: none;
+            }
+        }
+    }
+
+    hr {
+        border: none;
+        height: 1px;
+        background-color: rgba(0, 0, 0, 0.1);
+        margin-bottom: 8px;
+    }
+
+    .more-specs {
+        /* background-color: green; */
+        flex: 1;
+        margin-top: 18px;
+        display: flex;
+        flex-direction: column;
+        padding: 18px;
+        gap: 8px;
+
+        .three {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            /* background-color: yellow; */
+            gap: 18px;
+
+            .spec {
+                /* background-color: skyblue; */
+                flex: 1;
+
+                display: flex;
+                justify-content: start;
+
+                img {
+                    height: 40px;
+                }
+
+                .desc {
+                    margin-left: 12px;
+                    /* background-color: red; */
+
+                    h4 {
+                        font-size: 0.9em;
+                    }
+
+                    p {
+                        font-size: 0.8em;
+                        margin-top: 8px;
+                    }
+                }
+            }
         }
     }
 }
