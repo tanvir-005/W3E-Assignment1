@@ -506,7 +506,7 @@ article {
 
 .highlights {
     background-color: var(--very-light);
-    height: 90vh;
+    /* height: 90vh; */
     padding: 32px;
     display: flex;
     flex-direction: column;
@@ -621,9 +621,91 @@ article {
     }
 }
 
+.special {
+    margin: 24px 0;
+    h4, p {
+        display: inline;
+    }
+    
+    p {
+        font-size: 0.8em;
+        margin-left: 18px;
+    }
+}
 
+.hr {
+    border: none;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: 18px;
+}
 
+.h2 {
+    font-size: 0.8 em;
+    margin: 12px 0;
+}
 
+.reviews {
+    display: flex;
+    gap: 12px;
+
+    .review {
+        border: 2px solid var(--very-light2);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        padding: 18px;
+
+        .date-star {
+            display: flex;
+
+            .date {
+                color: var(--lightgrey);
+            }
+
+            .star {
+                margin-left: 8px;
+            }
+            
+            .yellow {
+                color: gold;
+            }
+            
+            .grey {
+                color: var(--lightgrey)
+            }
+
+            span {
+                font-size: 0.75em;
+            }
+        }
+        
+        p {
+            margin-top: 18px;
+            font-size: 0.8em;
+        }
+        
+        .profile {
+            margin-top: 18px;
+            display: flex;
+            align-items: center;
+            
+            img {
+                height: 25px;
+                width: 25px;
+                object-fit: cover;
+                border-radius: 50rem;
+                border: 2px solid var(--second-accent)
+            }
+            
+            span {
+                margin-left: 8px;
+                font-size: 0.8em;
+                color: var(--lightgrey);
+            }
+        }
+    }
+}
 
 
 
