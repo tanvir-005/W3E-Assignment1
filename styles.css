@@ -250,7 +250,7 @@ article {
 }
 
 
-.course-highlights {
+.course-specs {
     background-color: var(--very-light);
     border: 2px solid var(--very-light2);
     border-radius: 10px;
@@ -502,6 +502,57 @@ article {
     }
 
     margin-bottom: 24px;
+}
+
+.highlights {
+    background-color: var(--very-light);
+    height: 90vh;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        font-size: 1em;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+        margin: 8px 0;
+
+        .card {
+            flex: 1;
+            background-color: white;
+            padding: 18px;
+            height: 40vh;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            /* gap: 8px; */
+
+            img {
+                width: 24px;
+            }
+
+            h4 {
+                font-size: 1em;
+                margin: 18px 0 8px 0;
+            }
+
+            p {
+                font-size: 0.8em;
+                margin: 0 0 8px 0;
+            }
+
+            span {
+                font-size: 0.8em;
+                color: var(--lightgrey)
+            }
+
+        }
+    }
 }
 
 
