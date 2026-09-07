@@ -22,6 +22,8 @@
 
     /* used in low opacity  */
     --lightgrey: #929292;
+
+    --border: #C3DAD7;
 }
 
 *, *:hover {
@@ -324,7 +326,7 @@ article {
 .resorts {
     /* background-color: bisque; */
     display: grid;
-    grid-template-rows: repeat(2, 50vh);
+    grid-template-rows: repeat(2, minmax(35vh, auto));
     grid-template-columns: 2fr 2fr 2fr 3fr;
     grid-gap: 8px;
 }
@@ -525,7 +527,8 @@ article {
             flex: 1;
             background-color: white;
             padding: 18px;
-            height: 40vh;
+            height: minmax(30vh, auto);
+            /* height: auto; */
             border-radius: 8px;
             border: 2px solid var(--very-light2);
 
@@ -761,8 +764,11 @@ article {
 }
 
 .weather {
-    background-color: beige;
+    /* background-color: beige; */
     margin: 24px 0;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
 
     .days {
         background: linear-gradient(to top right, var(--gradient-dark), var(--gradient-light));
@@ -801,15 +807,52 @@ article {
             align-items: center;
 
             img {
-                width: 30px;
+                width: 40px;
                 margin: 8px 0;
             }
         }
 
     }
+
+    h3 {
+        margin: 18px 24px 0;
+    }
 }
 
+.seasons {
+    padding: 18px 24px;
+    display: flex;
+    gap: 32px;
 
+    .season {
+        /* background-color: maroon; */
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        img {
+            width: 40px;
+            padding: 5px;
+            border: 2px solid var(--gradient-light);
+            border-radius: 50rem;
+        }
+
+        h5, h6 {
+            font-size: 1em;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            color: var(--lightgrey);
+            line-height: 150%;
+        }
+    }
+}
 
 
 
