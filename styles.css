@@ -700,6 +700,12 @@ article {
             grid-template-rows: 1fr 1fr;
             grid-template-columns: 1fr 1fr;
         }
+        
+        @media (max-width: 768px) {
+            display: flex;
+            gap: 18px;
+            overflow-x: auto;
+        }
 
         .card {
             flex: 1;
@@ -714,6 +720,11 @@ article {
             flex-direction: column;
             justify-content: start;
             /* gap: 8px; */
+
+            @media (max-width: 768px) {
+                /* background-color: red; */
+                min-width: 300px;
+            }
 
             img {
                 width: 24px;
@@ -1356,13 +1367,6 @@ aside {
     
 }
 
-
-
-
-
-
-
-
 footer {
     margin-top: 100px;
     height: 80vh;
@@ -1370,6 +1374,10 @@ footer {
     background-size: cover;
     background-position: center top; 
     display: block;
+
+    @media (max-width: 768px) {
+        height: 100vh;
+    }
 }
 
 .footer-area {
@@ -1402,6 +1410,10 @@ footer {
     grid-auto-flow: column;
     grid-template-rows: repeat(8, auto);
     gap: 16px 70px;
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(16, auto);
+    }
 
     
     a {
