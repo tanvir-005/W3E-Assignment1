@@ -11,5 +11,5 @@
 7. design for mobile 
 8. check for any inconsistencies and fix
 
-9. modify any logo or image that is not up to the mark   <-- current stage
-10. deliver 
+9. modify any image that is not up to the mark   
+10. deliver                                      <-- current stage
