@@ -854,6 +854,78 @@ article {
     }
 }
 
+.other-courses {
+    display: flex;
+    gap: 18px;
+    margin-top: 18px;
+    /* padding: 24px; */
+
+    .course {
+        display: flex;
+        flex-direction: column;
+        background-color: beige;
+        border-radius: 12px;
+        overflow: hidden;
+        
+        img {
+            height: 20vh;
+            object-fit: cover;
+        }
+        
+        .details {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding: 18px;
+
+
+            h3 {
+                margin: 12px 0;
+            }
+
+            /* background-color: red; */
+    
+            .dist {
+                display: flex;
+                gap: 12px;
+                align-items: center;
+                img {
+                    width: auto;
+                    height: 18px;
+                }
+                span {
+                    color: var(--gradient-light)
+                }
+            }
+    
+            .specs {
+                display: flex;
+                align-items: center;
+                gap: 18px;
+    
+                .spec {
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+    
+                    img {
+                        height: 18px;
+                        width: auto;
+                    }
+    
+                    span {
+                        font-size: 0.8em;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+
+
 
 
 
