@@ -526,6 +526,8 @@ article {
             background-color: white;
             padding: 18px;
             height: 40vh;
+            border-radius: 8px;
+            border: 2px solid var(--very-light2);
 
             display: flex;
             flex-direction: column;
@@ -757,6 +759,62 @@ article {
     font-size: 0.9em;
     color: var(--lightgrey);
 }
+
+.weather {
+    background-color: beige;
+    margin: 24px 0;
+
+    .days {
+        background: linear-gradient(to top right, var(--gradient-dark), var(--gradient-light));
+        padding: 18px;
+        display: flex;
+        
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+
+        .vertical-line {
+            background-color: var(--primary-light);
+            width: 1px;
+            height: 50px;
+        }
+
+        h3, h4, span {
+            color: white;
+        }
+
+        h3 {
+            font-size: 1em;
+        }
+
+        h4 {
+            font-size: 0.8em;
+        }
+
+        span {
+            font-size: 0.7em;
+        }
+
+        .cloud {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                width: 30px;
+                margin: 8px 0;
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+
 
 
 
